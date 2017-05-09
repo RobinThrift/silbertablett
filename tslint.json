@@ -1,0 +1,16 @@
+{
+    "extends": "tslint-microsoft-contrib",
+    "lintOptions": {
+        "typeCheck": true
+    },
+    "format": "codeFrame",
+    "exclude": [
+        "node_modules",
+        "build"
+    ],
+    "rules": {
+        "no-suspicious-comment": false,
+        "missing-jsdoc": false,
+        "semicolon": false
+    }
+}
