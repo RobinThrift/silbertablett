@@ -17,9 +17,14 @@
     "url": "https://github.com/RobinThrift/silbertablett/issues"
   },
   "homepage": "https://github.com/RobinThrift/silbertablett#readme",
-  "dependencies": {},
+  "dependencies": {
+    "cpy": "^5.0.0"
+  },
   "devDependencies": {
+    "@types/cpy": "^5.0.1",
+    "@types/node": "^7.0.18",
     "ava": "^0.19.1",
+    "ava-check": "^1.0.0-rc.0",
     "prettier": "^1.3.1",
     "tslint": "^4.5.1",
     "tslint-microsoft-contrib": "^4.0.1",

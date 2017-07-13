@@ -21,7 +21,7 @@ build-watch:
 
 test: build
 	@echo "+ $@"
-	@$(BIN_DIR)/ava
+	@$(BIN_DIR)/ava "build/**/*.spec.js"
 
 test-watch:
 	@echo "+ $@"
@@ -40,4 +40,8 @@ fmt:
 
 lint: fmt
 	@echo "+ $@"
-	@$(BIN_DIR)/tslint  --exclude "node_modules" --project tsconfig.json --type-check "src/**"
+	@$(BIN_DIR)/tslint --config tslint.json \
+		--exclude "node_modules" \
+		--project tsconfig.json \
+		--format codeFrame \
+		--type-check "src/**"
